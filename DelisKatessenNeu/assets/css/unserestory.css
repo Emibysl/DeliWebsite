@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d2f36;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.back-button {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    background: #1074bc;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.story-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.story-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Erhöht den Abstand zwischen den Abschnitten */
+    max-width: 1100px;
+    align-items: center;
+}
+
+.story-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    gap: 30px;
+    flex-wrap: wrap; /* Stellt sicher, dass sich die Elemente auf kleineren Bildschirmen anpassen */
+}
+
+.story-text {
+    flex: 1;
+    text-align: left;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.story-image {
+    flex: 1;
+    max-width: 400px;
+    margin-top: 20px; /* Abstand zum Text */
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+/* Anpassungen für mobile Geräte */
+@media (max-width: 768px) {
+    .story-container {
+        padding: 20px; /* Weniger Abstand auf mobilen Geräten */
+    }
+
+    .story-block {
+        flex-direction: column; /* Text und Bild untereinander auf mobilen Geräten */
+        align-items: center;
+    }
+
+    .story-text {
+        text-align: center;
+        margin-bottom: 20px; /* Abstand zwischen Text und Bild */
+    }
+
+    .story-image {
+        max-width: 100%; /* Bild passt sich der Bildschirmgröße an */
+        margin-top: 10px; /* Kleinerer Abstand */
+    }
+
+    h1 {
+        font-size: 2rem; /* Kleinere Schriftgröße für mobile Geräte */
+    }
+
+    p {
+        font-size: 0.9rem; /* Kleinere Schriftgröße für mobile Geräte */
+    }
+}
+
+/* Anpassungen für sehr kleine Geräte wie Smartphones im Hochformat */
+@media (max-width: 480px) {
+    .back-button {
+        font-size: 16px;
+        padding: 8px 12px; /* Kleinere Schaltfläche */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Noch kleinere Schriftgröße */
+    }
+
+    p {
+        font-size: 0.85rem; /* Noch kleinere Schriftgröße */
+    }
+}
