@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,17 +16,22 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <!-- jQuery -->
+
+  <!-- jQuery (für ältere Bootstrap-Versionen) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Bootstrap Bundle mit Popper.js -->
+
+  <!-- Bootstrap Bundle mit Popper.js (für das Collapse-Feature notwendig) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Swiper JS CSS -->
+
+  <!--=============== SWIPER CSS ===============-->
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/styles.css" />
   <title>Deli's Katessen</title>
 </head>
+
 <body>
   <nav>
     <div class="nav__header">
@@ -44,8 +50,8 @@
       <li><a href="#catering">Kategorien</a></li>
       <li><a href="#speisekarte">Speisekarte</a></li>
       <li><a href="#client">Kunden</a></li>
-      <!-- Hier den Kontakt-Link anpassen -->
-      <li><a href="#kontakt">Kontakt</a></li>
+
+      <li><a href="#contact">Kontakt</a></li>
     </ul>
     <div class="nav__btn">
       <a href="tel:+4915205221182" class="btn phone-btn">
@@ -53,7 +59,6 @@
       </a>
     </div>
   </nav>
-
   <header class="section__container header__container" id="home">
     <div class="header__image">
       <img src="assets/img/Mascot.png" alt="header" />
@@ -62,7 +67,8 @@
       <h1>Genießen, Verweilen & <span>Klasse Neu Entdecken</span>.</h1>
       <p class="section__description">
         Erlebe kulinarische Raffinesse bei Deli’s Katessen – mit handverlesenen Zutaten, stilvollem Ambiente und
-        Speisen, die mit Sorgfalt und einem Hauch Eleganz zubereitet werden. Hier trifft Qualität auf Geschmack.
+        Speisen,
+        die mit Sorgfalt und einem Hauch Eleganz zubereitet werden. Hier trifft Qualität auf Geschmack.
       </p>
       <div class="header__btn">
         <a href="#speisekarte" class="btn">
@@ -94,6 +100,7 @@
         </div>
         <div class="special__footer"></div>
       </div>
+
       <div class="special__card">
         <img src="assets/img/DoenerSpecial.png" alt="Döner" />
         <h4>Döner</h4>
@@ -109,6 +116,7 @@
         </div>
         <div class="special__footer"></div>
       </div>
+
       <div class="special__card">
         <img src="assets/img/CevapciciSpecial.png" alt="Cevapcici" />
         <h4>Cevapcici</h4>
@@ -125,10 +133,12 @@
         <div class="special__footer"></div>
       </div>
     </div>
+    </div>
   </section>
 
   <section class="section__container explore__container" id="uberuns">
     <div class="explore__image">
+      <!-- Passe das Bild an, damit es zum eleganten Auftritt von Deli's Katessen passt -->
       <img src="assets/img/ÜberUnsBild1.png" alt="Deli's Katessen – Eleganz und Genuss" />
     </div>
     <div class="explore__content">
@@ -147,25 +157,62 @@
     </div>
   </section>
 
-  <!-- Eigene Kontakt-Sektion -->
-  <section class="section__container" id="kontakt">
-    <div class="container text-center">
-      <h2 class="section__header mb-4">Kontakt</h2>
-      <p class="section__description">
-        Wir freuen uns auf Ihre Nachricht! Sie erreichen uns telefonisch, per E-Mail oder über unser Kontaktformular.
-      </p>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <p><strong>Telefon:</strong> <a href="tel:+4915205221182">08381 9485844</a></p>
-          <p><strong>E-Mail:</strong> <a href="mailto:info@deliskatessen.de">info@deliskatessen.de</a></p>
+  <!--
+  <section class="section__container special__container" id="gerichte">
+    <h2 id="speisekarte" class="section__header">Hausgemachte Leckerbissen</h2>
+    <p class="section__description">
+      Lass dich von unseren Kreationen begeistern – frisch zubereitet, mit Sorgfalt serviert und mit klassischer Eleganz
+      verfeinert. Ob traditionelle Favoriten oder innovative Neuinterpretationen – bei Deli’s Katessen in Heimenkirch
+      wird jeder Besuch zum Erlebnis des Genusses.
+    </p>
+    <div class="swiper speisekarte-swiper">
+      <div class="swiper-wrapper">
+
+       
+        <div class="swiper-slide">
+          <img src="assets/img/special-1.png" alt="Speisekarte Seite 1" class="img-fluid">
+        </div>
+
+       
+        <div class="swiper-slide">
+          <img src="assets/img/special-3.png" alt="Speisekarte Seite 2" class="img-fluid">
+        </div>
+
+      
+        <div class="swiper-slide">
+          <img src="assets/img/special-2.png" alt="Speisekarte Seite 2" class="img-fluid">
+        </div>
+
+    
+        <div class="swiper-slide">
+          <img src="assets/img/special-1.png" alt="Speisekarte Seite 2" class="img-fluid">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="assets/img/special-1.png" alt="Speisekarte Seite 2" class="img-fluid">
+        </div>
+
+        
+        <div class="swiper-slide">
+          <img src="assets/img/special-2.png" alt="Speisekarte Seite 2" class="img-fluid">
+        </div>
+
+     
+        <div class="swiper-slide">
+          <img src="assets/img/special-3.png" alt="Speisekarte Seite 2" class="img-fluid">
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Bestelloptionen -->
+      
+      <div class="swiper-pagination"></div>
+    </div>
+    </div>
+  </section>-->
+
   <section class="section__container banner__container" id="Bestelloptionen">
     <h2 class="section__header">Bestelloptionen</h2>
+
+    <!-- Anruf-Karte: "tel:"-Link -->
     <a href="tel:+4983819485844" class="banner__card-outer">
       <div class="banner__card-inner">
         <span class="banner__icon"><i class="ri-phone-fill"></i></span>
@@ -176,6 +223,8 @@
         </p>
       </div>
     </a>
+
+    <!-- WhatsApp-Karte: Link zu WhatsApp (Format: https://wa.me/Nummer ohne Pluszeichen) -->
     <a href="https://wa.me/4917629383577" class="banner__card-outer" target="_blank">
       <div class="banner__card-inner">
         <span class="banner__icon"><i class="ri-whatsapp-fill"></i></span>
@@ -186,6 +235,8 @@
         </p>
       </div>
     </a>
+
+    <!-- Online-Shop-Karte: Link zum Bestellshop -->
     <a href="https://delis-katessen-lieferservice.order.dish.co/menus" class="banner__card-outer" target="_blank">
       <div class="banner__card-inner">
         <span class="banner__icon"><i class="ri-shopping-cart-fill"></i></span>
@@ -198,22 +249,42 @@
     </a>
   </section>
 
-  <!-- Liefergebiete -->
+
   <section class="py-3 bg-light" id="liefergebiet">
     <div class="container">
       <h2 class="text-center mb-3">Liefergebiete</h2>
       <div class="text-center mb-3">
         <p>Unsere Liefergebiete im Überblick!</p>
       </div>
+
+      <!-- Collapse Toggle Button -->
       <div class="text-center mb-4">
         <button class="btn btn-outline-primary" id="lieferorteToggleBtn" type="button" data-bs-toggle="collapse"
           data-bs-target="#lieferorteCollapse" aria-expanded="false" aria-controls="lieferorteCollapse">
           Lieferorte anzeigen
         </button>
       </div>
+
+      <!-- Collapsible Grid of Locations -->
       <div class="collapse" id="lieferorteCollapse">
         <div class="row justify-content-center">
-          <!-- Alle Standort-Karten -->
+          <!-- Standort-Karten (alle Orte) -->
+          <!-- Wiederhole für alle Orte -->
+          <!-- Jede Karte ist ein kleines Icon mit Ort -->
+          <!-- Du kannst bei Bedarf den Stil feintunen -->
+          <!-- Erzeugt durch Schleife o.ä. – hier manuell ergänzt -->
+
+          <!-- ORTE (alle wie von dir gegeben) -->
+          <script>
+            const orte = [
+              "Heimenkirch", "Meckatz", "Zwiesele", "Opfenbach", "Hergatz", "Mellatz", "Maria-Thann",
+              "Lindenberg", "Ried", "Scheidegg", "Schönau", "Bremenried", "Weiler-Simmerberg",
+              "Oberreute", "Stiefenhofen", "Ellhofen", "Maierhöfen", "Grünenbach", "Röthenbach",
+              "Gestratz", "Brugg"
+            ];
+          </script>
+
+          <!-- Manuell: -->
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
               <div class="card-body p-1">
@@ -222,163 +293,153 @@
               </div>
             </div>
           </div>
-          <!-- Weitere Orte -->
+
+          <!-- Hier folgen die restlichen Orte, dupliziere den Block oben und ersetze den Ortsnamen: -->
+          <!-- Ich kürze hier, aber du fügst alle Orte genauso ein: -->
+          <!-- Beispiel: -->
+          <!-- <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">...Meckatz</div> -->
+          <!-- ... -->
+
+          <!-- Du kannst diesen Codeblock 1:1 weiter duplizieren und nur den Ortsnamen anpassen -->
+          <!-- Unten alle Orte als fertiger HTML-Block: -->
+
+          <!-- Start der restlichen Orte -->
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Meckatz</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Zwiesele</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Opfenbach</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Hergatz</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Mellatz</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Maria-Thann</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Lindenberg</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Ried</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Scheidegg</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Schönau</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Bremenried</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Weiler-Simmerberg</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Oberreute</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Stiefenhofen</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Ellhofen</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Maierhöfen</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Grünenbach</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Röthenbach</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Gestratz</h6>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
             <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
+              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
                 <h6 class="card-title mb-0">Brugg</h6>
               </div>
             </div>
@@ -436,6 +497,8 @@
       </div>
     </div>
   </section>
+  
+
 
   <section class="chef" id="chef">
     <img src="assets/img/topping1.jpg" alt="topping" class="chef__bg" />
@@ -446,9 +509,11 @@
       <div class="chef__content">
         <h2 class="section__header">Unsere Vision: Genuss für alle – bequem & vielfältig</h2>
         <p class="section__description">
-          Bei Deli’s Katessen verfolgen wir ein klares Ziel: Kulinarischer Genuss soll unkompliziert, stilvoll und für jeden zugänglich sein.
+          Bei Deli’s Katessen verfolgen wir ein klares Ziel: Kulinarischer Genuss soll unkompliziert, stilvoll und für
+          jeden zugänglich sein.
           Deshalb bieten wir nicht nur erstklassige Speisen, sondern auch moderne Services, die den Alltag erleichtern.
         </p>
+
         <ul class="chef__list">
           <li>
             <span><i class="ri-checkbox-fill"></i></span>
@@ -470,7 +535,8 @@
   <section class="section__container" id="catering">
     <h2 class="section__header">Unsere Kategorien</h2>
     <p class="section__description">
-      Du kannst aus unserem vielfältigen Sortiment auswählen. All unsere Gerichte werden firsch zubereitet und spiegeln somit das wieder, was uns am wichtigsten ist: Klasse.
+      Du kannst aus unserem vielfältigen Sortiment auswählen. All unsere Gerichte werden firsch zubereitet und spiegeln
+      somit das wieder, was uns am wichtigsten ist: Klasse.
       <br />
       Wähle die Kategorie, die dich interessiert, um mehr zu erfahren.
     </p>
@@ -527,119 +593,290 @@
         <p>Erfrischung pur – von Softdrinks bis hausgemachten Eistees.</p>
       </a>
     </div>
-  </section>
 
-  <section class="py-5 bg-white" id="paypal-zahlung">
-    <div class="container text-center">
-      <h2 class="section__header mb-3">Bequeme Zahlung mit PayPal</h2>
-      <p class="section__description mb-4">
-        Ab einem Bestellwert von <strong>15,00 €</strong> kannst du bequem per PayPal bezahlen.<br>
-        Einfach den QR-Code scannen und den Betrag senden – schnell, sicher und unkompliziert.
+
+
+    <!-- <div class="catering__contact">
+      <p>Für ein unverbindliches Angebot oder bei Fragen, ruf uns einfach an:</p>
+      <a href="tel:+4915205221182" class="button__call">Jetzt anrufen</a>
+    </div>
+  </section>-->
+
+    <!--==================== SPEISEKARTE ====================
+    <section class="getraenke section" id="getraenke">
+      <div class="getraenke__container container grid">
+         <div class="getraenke__data">
+          <h2 class="section__header">Speisekarte</h2>
+
+          <p class="section__description">  
+            Entdecke unsere vielfältigen Gerichte und Getränke – von klassischen Spezialitäten bis hin zu einzigartigen Kreationen. Wische durch die Seiten und finde deine Favoriten!  
+         </p>
+
+          
+         </div>
+
+         <div class="getraenke__swiper swiper">
+            <div class="swiper-wrapper">
+
+               <article class="getraenke__article swiper-slide">
+                  <h3 class="sortiment__title" id="ueberschriftslider"></h3>
+                  <img src="assets/img/Karte seite 1-2_page-0001.jpg" alt="image" class="getraenke__img">
+               </article>
+
+               <article class="getraenke__article swiper-slide">
+                  <h3 class="sortiment__title" id="ueberschriftslider"></h3>
+                  <img src="assets/img/Karte seite 1-2_page-0002.jpg" alt="image" class="getraenke__img">
+               </article>
+
+            </div>
+         </div>
+      </div>
+   </section>-->
+
+
+    <section class="section__container special__container" id="speisekarte">
+      <div class="container text-center">
+        <h2 class="section__header">Unsere Speisekarte</h2>
+
+        <!-- Switch Button in Container für Zentrierung 
+        <div class="speisekarte-switch-container">
+          <div class="form-check form-switch speisekarte-switch">
+            <input class="form-check-input" type="checkbox" id="speisekarteToggle">
+            <label class="form-check-label" for="speisekarteToggle"></label>
+          </div>
+        </div>-->
+
+        <!-- Swiper für Frühstück 
+        <div class="swiper speisekarte-swiper" id="frühstückSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte1.png" alt="Speisekarte Seite 1" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte2.png" alt="Speisekarte Seite 2" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte3.png" alt="Speisekarte Seite 3" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte4.png" alt="Speisekarte Seite 3" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte5.png" alt="Speisekarte Seite 3" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte6.png" alt="Speisekarte Seite 3" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte7.png" alt="Speisekarte Seite 3" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte8.png" alt="Speisekarte Seite 3" class="img-fluid">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>-->
+
+        <!-- Swiper für normale Speisekarte -->
+        <div class="swiper speisekarte-swiper" id="normaleSpeisekarteSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte1.png" alt="Speisekarte Seite 1" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte2.png" alt="Speisekarte Seite 2" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte3.png" alt="Speisekarte Seite 3" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte4.png" alt="Speisekarte Seite 3" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte5.png" alt="Speisekarte Seite 3" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte6.png" alt="Speisekarte Seite 3" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte7.png" alt="Speisekarte Seite 3" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/Speisekarte/Speisekarte8.png" alt="Speisekarte Seite 3" class="img-fluid">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+  <div  class="swiper speisekarte-swiper">
+	  <h2 id="speisekarte" class="section__header">Speisekarte</h2>
+		<div class="swiper-wrapper"> 
+			
+			  <div class="swiper-slide">
+				<img src="assets/img/Elemseite_1.png" alt="Speisekarte Seite 1" class="img-fluid">
+			  </div>
+			  
+			  
+			  <div class="swiper-slide">
+				<img src="assets/img/Elemseite_2.png" alt="Speisekarte Seite 2" class="img-fluid">
+			  </div>
+			  
+			 
+			  <div class="swiper-slide">
+				<img src="assets/img/Elemseite_3.png" alt="Speisekarte Seite 2" class="img-fluid">
+			  </div>
+			  
+			  
+			  <div class="swiper-slide">
+				<img src="assets/img/Elemseite_4.png" alt="Speisekarte Seite 2" class="img-fluid">
+			  </div>
+			  
+			 
+			  <div class="swiper-slide">
+				<img src="assets/img/FruehElemseite_1.png" alt="Speisekarte Seite 2" class="img-fluid">
+			  </div>
+			  
+			  
+			  <div class="swiper-slide">
+				<img src="assets/img/FruehElemseite_2.png" alt="Speisekarte Seite 2" class="img-fluid">
+			  </div>
+			  
+			  
+			  <div class="swiper-slide">
+				<img src="assets/img/FruehElemseite_3.png" alt="Speisekarte Seite 2" class="img-fluid">
+			  </div>			  		  
+		</div>
+-->
+    <!-- Navigation Buttons 
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>-->
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+    </div>
+    </div>
+
+    <br>
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">Was unsere Kunden sagen</h2>
+      <p class="section__description">
+        Erfahre, was unsere Gäste über Elems Mealtime sagen.
+        Echte Bewertungen von zufriedenen Kunden!
       </p>
-      <div class="d-flex justify-content-center">
-        <div class="card border-0 shadow-sm p-3" style="max-width: 300px;">
-          <img src="assets/img/QRCodeDeli.png" alt="PayPal QR Code" class="img-fluid rounded">
-          <p class="mt-3 mb-0 text-muted small">QR-Code scannen & direkt bezahlen</p>
+      <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+      <script src="https://static.elfsight.com/platform/platform.js" async></script>
+      <div class="elfsight-app-ae337ac9-78e6-46e8-9b92-3415f388879b" data-elfsight-app-lazy></div>
+    </section>
+
+    <!-- Öffnungszeiten Section -->
+    <section id="oeffnungszeiten" class="section__container py-5">
+      <div class="container">
+        <h2 class="section__header text-center mb-4">Öffnungszeiten</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Montag
+                <span>Geschlossen</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Dienstag
+                <span>11:00 - 22:00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Mittwoch
+                <span>11:00 - 22:00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Donnerstag
+                <span>11:00 - 22:00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Freitag
+                <span>11:00 - 22:00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Samstag
+                <span>11:00 - 22:00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Sonntag
+                <span>11:00 - 22:00</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="chef" id="chef">
-    <img src="assets/img/topping1.jpg" alt="topping" class="chef__bg" />
-    <div class="section__container chef__container">
-      <div class="chef__image">
-        <img src="assets/img/KochAnOfenAi.png" alt="chef" />
-      </div>
-      <div class="chef__content">
-        <h2 class="section__header">Unsere Vision: Genuss für alle – bequem & vielfältig</h2>
-        <p class="section__description">
-          Bei Deli’s Katessen verfolgen wir ein klares Ziel: Kulinarischer Genuss soll unkompliziert, stilvoll und für jeden zugänglich sein.
-          Deshalb bieten wir nicht nur erstklassige Speisen, sondern auch moderne Services, die den Alltag erleichtern.
-        </p>
-        <ul class="chef__list">
-          <li>
-            <span><i class="ri-checkbox-fill"></i></span>
-            Vielfältiges Sortiment mit Spezialitäten aus unterschiedlichen Nationen
-          </li>
-          <li>
-            <span><i class="ri-checkbox-fill"></i></span>
-            Flexible Bestelloptionen: vor Ort, telefonisch, per WhatsApp oder über unseren Onlineshop
-          </li>
-          <li>
-            <span><i class="ri-checkbox-fill"></i></span>
-            Bequeme Lieferung direkt bis vor deine Haustür – frisch und zuverlässig
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <!-- ScrollReveal Animation -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <footer class="footer">
-    <div class="section__container footer__container">
-      <div class="footer__col">
-        <div class="logo footer__logo">
-          <a href="#">Deli's<span> Katessen</span></a>
+    <footer class="footer" >
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#">Deli's<span> Katessen</span></a>
+          </div>
+          <p class="section__description">
+            Erlebe Genuss mit Klasse bei Deli’s Katessen – wo vertraute Lieblingsgerichte neu interpretiert und mit
+            Sorgfalt serviert werden.
+          </p>
+          <p class="highlighted">
+            📍 <a
+              href="https://www.google.de/maps/place//data=!4m2!3m1!1s0x479baee23974abb1:0x764cc08ba1f1071d?sa=X&ved=1t:8290&ictx=111"
+              target="_blank">
+              Lindauer Str. 21, 88178 Heimenkirch
+            </a>
+          </p>
+          <p class="highlighted">
+            📞 <a href="tel:+4915205221182">08381 9485844</a>
+          </p>
         </div>
-        <p class="section__description">
-          Erlebe Genuss mit Klasse bei Deli’s Katessen – wo vertraute Lieblingsgerichte neu interpretiert und mit
-          Sorgfalt serviert werden.
-        </p>
-        <p class="highlighted">
-          📍 <a href="https://www.google.de/maps/place//data=!4m2!3m1!1s0x479baee23974abb1:0x764cc08ba1f1071d?sa=X&ved=1t:8290&ictx=111" target="_blank">
-            Lindauer Str. 21, 88178 Heimenkirch
-          </a>
-        </p>
-        <p class="highlighted">
-          📞 <a href="tel:+4915205221182">08381 9485844</a>
-        </p>
+        <div class="footer__col">
+          <h4>Unternehmen</h4>
+          <ul class="footer__links">
+            <li><a href="unserestory.html">Über uns</a></li>
+            <li><a href="impressum.html" id="impressum">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutzrichtlinien</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer__col">
-        <h4>Unternehmen</h4>
-        <ul class="footer__links">
-          <li><a href="unserestory.html">Über uns</a></li>
-          <li><a href="impressum.html" id="impressum">Impressum</a></li>
-          <li><a href="datenschutz.html">Datenschutzrichtlinien</a></li>
-        </ul>
+      <div class="footer__bar" id="contact">
+        Copyright © 2025 Deli's Katessen. Alle Rechte vorbehalten.
       </div>
-    </div>
-    <div class="footer__bar" id="footer">
-      Copyright © 2025 Deli's Katessen. Alle Rechte vorbehalten.
-    </div>
-  </footer>
+    </footer>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="assets/js/main.js"></script>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var swiper = new Swiper(".speisekarte-swiper", {
-        loop: true,
-        autoplay: {
-          delay: 8000,
-          disableOnInteraction: false
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        }
-      });
 
-      // Button-Text-Anpassung für Lieferorte Collapse
-      const toggleBtn = document.getElementById("lieferorteToggleBtn");
-      const collapseElement = document.getElementById("lieferorteCollapse");
-      collapseElement.addEventListener("show.bs.collapse", function () {
-        toggleBtn.textContent = "Lieferorte ausblenden";
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".speisekarte-swiper", {
+          loop: true, // Endlos-Schleife
+          autoplay: {
+            delay: 8000, // Automatisch weiterblättern alle 3 Sekunden
+            disableOnInteraction: false // Stoppt nicht, wenn der Nutzer klickt
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          }
+        });
       });
-      collapseElement.addEventListener("hide.bs.collapse", function () {
-        toggleBtn.textContent = "Lieferorte anzeigen";
-      });
-    });
-  </script>
+    </script>
+
 </body>
+
 </html>
