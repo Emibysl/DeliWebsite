@@ -698,7 +698,7 @@
           <div class="swiper-pagination"></div>
         </div>-->
 
-        <!-- Swiper für normale Speisekarte -->
+        <!-- Swiper für normale Speisekarte 
         <div class="swiper speisekarte-swiper" id="normaleSpeisekarteSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -730,7 +730,56 @@
         </div>
       </div>
     </section>
+  -->
 
+  <!-- Responsive PDF-Einbettung: Vorder- und Rückseite der Speisekarte -->
+<!-- Speisekarte als PDF – nebeneinander auf Desktop, gestapelt auf Mobile -->
+<style>
+  /* Weißer Hintergrund fürs PDF-Viewport, falls der Browser dunkelgrau nutzt */
+  .pdf-wrapper iframe,
+  .pdf-wrapper object {
+    background: #fff;
+  }
+</style>
+
+<div class="row g-4 my-4 pdf-wrapper">
+  <!-- Seite 1 -->
+  <div class="col-12 col-md-6">
+    <object
+      data="assets/img/Speisekarte/1.pdf#toolbar=0&navpanes=0&view=FitH"
+      type="application/pdf"
+      width="100%"
+      height="90vh">
+      <a href="assets/img/Speisekarte/1.pdf" target="_blank" rel="noopener">
+        PDF herunterladen&nbsp;(Seite 1)
+      </a>
+    </object>
+    <p class="mt-2 small">
+      <a href="assets/img/Speisekarte/1.pdf" target="_blank" rel="noopener">
+        PDF herunterladen&nbsp;(Seite 1)
+      </a>
+    </p>
+  </div>
+
+  <!-- Seite 2 -->
+  <div class="col-12 col-md-6">
+    <object
+      data="assets/img/Speisekarte/2.pdf#toolbar=0&navpanes=0&view=FitH"
+      type="application/pdf"
+      width="100%"
+      height="90vh">
+      <a href="assets/img/Speisekarte/2.pdf" target="_blank" rel="noopener">
+        PDF herunterladen&nbsp;(Seite 2)
+      </a>
+    </object>
+    <p class="mt-2 small">
+      <a href="assets/img/Speisekarte/2.pdf" target="_blank" rel="noopener">
+        PDF herunterladen&nbsp;(Seite 2)
+      </a>
+    </p>
+  </div>
+</div>
+</section>
     <!--
   <div  class="swiper speisekarte-swiper">
 	  <h2 id="speisekarte" class="section__header">Speisekarte</h2>
