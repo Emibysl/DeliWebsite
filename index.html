@@ -268,236 +268,86 @@
 
 
   <section class="py-3 bg-light" id="liefergebiet">
-    <div class="container">
-      <h2 class="text-center mb-3">Liefergebiete</h2>
-      <div class="text-center mb-3">
-        <p>Unsere Liefergebiete im Überblick!</p>
-      </div>
+  <div class="container">
+    <h2 class="text-center mb-3">Liefergebiete</h2>
+    <p class="text-center mb-3">Unsere Liefergebiete im Überblick!</p>
 
-      <!-- Collapse Toggle Button -->
-      <div class="text-center mb-4">
-        <button class="btn btn-outline-primary" id="lieferorteToggleBtn" type="button" data-bs-toggle="collapse"
-          data-bs-target="#lieferorteCollapse" aria-expanded="false" aria-controls="lieferorteCollapse">
-          Lieferorte anzeigen
-        </button>
-      </div>
+    <!-- Toggle -->
+    <div class="text-center mb-4">
+      <button class="btn btn-outline-primary" data-bs-toggle="collapse"
+              data-bs-target="#lieferorteCollapse" aria-expanded="false"
+              aria-controls="lieferorteCollapse" id="lieferorteToggleBtn">
+        Lieferorte anzeigen
+      </button>
+    </div>
 
-      <!-- Collapsible Grid of Locations -->
-      <div class="collapse" id="lieferorteCollapse">
-        <div class="row justify-content-center">
-          <!-- Standort-Karten (alle Orte) -->
-          <!-- Wiederhole für alle Orte -->
-          <!-- Jede Karte ist ein kleines Icon mit Ort -->
-          <!-- Du kannst bei Bedarf den Stil feintunen -->
-          <!-- Erzeugt durch Schleife o.ä. – hier manuell ergänzt -->
+    <!-- Orte -->
+    <div class="collapse" id="lieferorteCollapse">
+      <div class="row justify-content-center" id="orteGrid"></div>
+      <p class="text-end fst-italic small mt-2">*alles andere auf Anfrage!</p>
+    </div>
 
-          <!-- ORTE (alle wie von dir gegeben) -->
-          <script>
-            const orte = [
-              "Heimenkirch", "Meckatz", "Zwiesele", "Opfenbach", "Hergatz", "Mellatz", "Maria-Thann",
-              "Lindenberg", "Ried", "Scheidegg", "Schönau", "Bremenried", "Weiler-Simmerberg",
-              "Oberreute", "Stiefenhofen", "Ellhofen", "Maierhöfen", "Grünenbach", "Röthenbach",
-              "Gestratz", "Brugg"
-            ];
-          </script>
-
-          <!-- Manuell: -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1">
-                <i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Heimenkirch</h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Hier folgen die restlichen Orte, dupliziere den Block oben und ersetze den Ortsnamen: -->
-          <!-- Ich kürze hier, aber du fügst alle Orte genauso ein: -->
-          <!-- Beispiel: -->
-          <!-- <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">...Meckatz</div> -->
-          <!-- ... -->
-
-          <!-- Du kannst diesen Codeblock 1:1 weiter duplizieren und nur den Ortsnamen anpassen -->
-          <!-- Unten alle Orte als fertiger HTML-Block: -->
-
-          <!-- Start der restlichen Orte -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Meckatz</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Zwiesele</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Opfenbach</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Hergatz</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Mellatz</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Maria-Thann</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Lindenberg</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Ried</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Scheidegg</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Schönau</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Bremenried</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Weiler-Simmerberg</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Oberreute</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Stiefenhofen</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Ellhofen</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Maierhöfen</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Grünenbach</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Röthenbach</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Gestratz</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
-            <div class="card text-center p-2 border-0 shadow-sm">
-              <div class="card-body p-1"><i class="ri-map-pin-2-line display-6 text-primary"></i>
-                <h6 class="card-title mb-0">Brugg</h6>
-              </div>
-            </div>
-          </div>
-          <!-- Ende aller Orte -->
+    <!-- Lieferinfos -->
+    <div class="row mt-5">
+      <!-- Innerorts -->
+      <div class="col-md-6 mb-3">
+        <div class="card border-0 shadow-sm p-4 bg-white h-100">
+          <h5 class="text-primary mb-2">
+            <i class="ri-truck-line me-2"></i>Lieferung&nbsp;Innerorts
+          </h5>
+          <p class="mb-0">
+            <strong>Gebiete:</strong> Heimenkirch, Meckatz, Riedhirsch, Mothen und Zwiesele<br>
+            ab&nbsp;15,00 € + 2,50 € Anfahrt
+          </p>
         </div>
       </div>
-
-      <!-- Lieferinformationen -->
-      <div class="row mt-5">
-        <div class="col-md-6 mb-3">
-          <div class="card border-0 shadow-sm p-4 bg-white h-100">
-            <h5 class="text-primary mb-2"><i class="ri-truck-line me-2"></i>Lieferung Innerorts</h5>
-            <p class="mb-0">
-              <strong>Gebiete:</strong> Heimenkirch, Meckatz, Riedhirsch, Zwiesele<br>
-              ab 10,00 € + 2,00 € Anfahrt<br>
-              ab 20,00 € frei Haus
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 mb-3">
-          <div class="card border-0 shadow-sm p-4 bg-white h-100">
-            <h5 class="text-primary mb-2"><i class="ri-map-pin-user-line me-2"></i>Lieferung Außerorts</h5>
-            <p class="mb-0">
-              ab 20,00 € – 40,00 € + 5,00 € Anfahrt<br>
-              ab 40,00 € – 60,00 € + 3,00 € Anfahrt<br>
-              ab 60,00 € frei Haus
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mt-4">
-        <div class="col text-center">
-          <div class="alert alert-success fs-5 mb-0" role="alert">
-            <strong>Ab einer Bestellung von 80,00 € gibt's einen Hauswein gratis!</strong>
-          </div>
+      <!-- Außerorts -->
+      <div class="col-md-6 mb-3">
+        <div class="card border-0 shadow-sm p-4 bg-white h-100">
+          <h5 class="text-primary mb-2">
+            <i class="ri-map-pin-user-line me-2"></i>Lieferung&nbsp;Außerorts
+          </h5>
+          <p class="mb-0">Lieferung ab&nbsp;25,00 € + 3,50 € Anfahrt</p>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Hauswein-Hinweis -->
+    <div class="row mt-4">
+      <div class="col text-center">
+        <div class="alert alert-success fs-5 mb-0">
+          <strong>Ab einer Bestellung von 80,00 € gibt’s einen Hauswein gratis!</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script: Karten dynamisch erzeugen -->
+  <script>
+    const orte = [
+      "Opfenbach", "Mellatz", "Scheidegg", "Schönau",
+      "Zwiesele", "Meckatz", "Heimenkirch", "Lindenberg",
+      "Ried", "Bremenried", "Weiler-Simmerberg", "Oberreute",
+      "Maria-Thann", "Röthenbach", "Ellhofen", "Stiefenhofen",
+      "Brugg", "Gestratz", "Grünenbach", "Maierhöfen"
+    ];
+
+    const grid = document.getElementById("orteGrid");
+
+    orte.forEach(ort => {
+      const col = document.createElement("div");
+      col.className = "col-6 col-sm-4 col-md-3 col-lg-2 mb-2";
+      col.innerHTML = `
+        <div class="card text-center p-2 border-0 shadow-sm h-100">
+          <div class="card-body p-1">
+            <i class="ri-map-pin-2-line display-6 text-primary"></i>
+            <h6 class="card-title mb-0">${ort}</h6>
+          </div>
+        </div>`;
+      grid.appendChild(col);
+    });
+  </script>
+</section>
 
   <section class="py-5 bg-white" id="paypal-zahlung">
     <div class="container text-center">
